@@ -15,7 +15,7 @@ with open(path.join(this_directory, "README.md"), encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
-    name="wagtail-localize",
+    name="enkonix-wagtail-localize",
     version=version["__version__"],
     description="Translation plugin for Wagtail CMS",
     long_description=long_description,

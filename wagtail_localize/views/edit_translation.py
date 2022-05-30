@@ -353,6 +353,8 @@ def get_segment_location_info(
                             ].target_models
                         ]
                 else:
+                    if not hasattr(edit_handler, "target_models"):
+                        return {"type": "unknown"}
                     allowed_page_types = [
                         "{app}.{model}".format(
                             app=model._meta.app_label, model=model._meta.model_name
